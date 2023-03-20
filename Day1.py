@@ -1,4 +1,4 @@
-'''
+
 #01
 print('Hello world')
 
@@ -46,20 +46,27 @@ if H<45: #45분 보다 작을 경우
     else: #그 외 경우
         H-=1
         M+=60
-print(H,M-45)'''
+print(H,M-45)
 
 #06 현재 시간에서 특정 시간(분단위) 더하기
-A,B,C=map(int,input().split())
-if B+C>60:
-    if A==0:
-        A=1
-        C=B-C
-    else:
-        A+=1
-        C=B-C
-print(A,C)
+h,m=map(int,input().split())
+t=int(input())
+h+=t//60
+m+=t%60
+if (m>=60):
+    h+=1
+    m-=60
+if (h>=24):
+    h-=24
+print(h,m)
 
+#07 구구단
+n=int(input())
+for i in range(1,10):
+    print(n,'*',i,'=',n*i)
 
-
-
-
+#08
+T=int(input())
+for i in range(T):
+    s,d=map(int,input().split())
+    print(s+d)
