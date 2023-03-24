@@ -9,7 +9,7 @@ N,X=map(int,input().split()) # N은 정수 N개의 값을 입력받음
 A=list(map(int,input().split()))
 for i in range(N):
     if A[i]<X:
-        print(A[i], end=" ")'''
+        print(A[i], end=" ")
 
 #10818번
 N=int(input())
@@ -22,3 +22,16 @@ for i in A[1:]:
     elif i<min:
         min=i
 print(min,max)
+
+#2562번
+a=[]
+for i in range(9):
+    a.append(int(input()))
+
+print(max(a))
+print(a.index(max(a))+1)'''
+
+#2743
+print(len(input()))
+
+
