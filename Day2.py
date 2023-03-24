@@ -29,9 +29,10 @@ for i in range(9):
     a.append(int(input()))
 
 print(max(a))
-print(a.index(max(a))+1)'''
+print(a.index(max(a))+1)
 
 #2743
-print(len(input()))
+print(len(input()))'''
 
+#10809
 
